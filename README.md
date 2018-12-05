@@ -19,8 +19,7 @@ Create a web application API with a single endpoint, `/sort`.
 - group input data by code
 - produce a sorted result with the following `output format`
 
-```
-json
+```json
 /*
 * input format
 */
