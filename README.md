@@ -19,59 +19,56 @@ Create a web application API with a single endpoint, `/sort`.
 - group input data by code
 - produce a sorted result with the following `output format`
 
+#### Input Format
 ```json
-/*
-* input format
-*/
-
 [
   {
-    id: 99999,
-    category: 18,
-    code: "SIMPLE_CODE",
-    description: "Some short description",
-    amount: 12.34
+    "id": 99999,
+    "category": 18,
+    "code": "SIMPLE_CODE",
+    "description": "Some short description",
+    "amount": 12.34
   },
   {
-    id: 22222,
-    category: 17,
-    code: "SIMPLE_CODE",
-    description: "Some short description",
-    amount: 43.21
+    "id": 22222,
+    "category": 17,
+    "code": "SIMPLE_CODE",
+    "description": "Some short description",
+    "amount": 43.21
   },
   {
-    id: 33333,
-    category: 18,
-    code: "OTHER_CODE",
-    description: "Some short description",
-    amount: 123.45
+    "id": 33333,
+    "category": 18,
+    "code": "OTHER_CODE",
+    "description": "Some short description",
+    "amount": 123.45
   }
 ]
+```
 
-/*
-* output format
-*/
+#### Output Format
+```json
 {
   "SIMPLE_CODE": [
     {
-      id: 99999,
-      category: 18,
-      description: "Some short description",
-      amount: 12.34
+      "id": 99999,
+      "category": 18,
+      "description": "Some short description",
+      "amount": 12.34
     },
     {
-      id: 22222,
-      category: 17,
-      description: "Some short description",
-      amount: 43.21
+      "id": 22222,
+      "category": 17,
+      "description": "Some short description",
+      "amount": 43.21
     }
   ],
   "OTHER_CODE": [
     {
-      id: 33333,
-      category: 18,
-      description: "Some short description",
-      amount: 123.45
+      "id": 33333,
+      "category": 18,
+      "description": "Some short description",
+      "amount": 123.45
     }
   ]
 }
